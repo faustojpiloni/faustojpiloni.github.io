@@ -17,7 +17,13 @@
         
         /* Estilos del Carrusel Simple */
         .carousel-container { position: relative; width: 100%; overflow: hidden; border-radius: 8px; border: 1px solid #30363d; }
-        .carousel-slide { display: none; width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+        .carousel-slide { 
+            display: none; 
+            width: 100%; 
+            aspect-ratio: 16/9; /* Esto define un marco fijo */
+            object-fit: contain; /* Cambia 'cover' por 'contain' para que la foto se vea entera sin recortarse */
+            background-color: #000; /* Fondo negro para los bordes si la foto es de otra proporción */
+        }
         .active { display: block; }
         .nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; padding: 10px; cursor: pointer; border: none; }
         .next { right: 0; } .prev { left: 0; }
