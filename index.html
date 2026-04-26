@@ -3,39 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fausto Piloni | Ingeniería de Sonido</title>
+    <title>Fausto Piloni | Ingeniería de Sonido y Acústica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }
-        header { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; border-radius: 8px; }
-        section { background: #fff; margin-top: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; pb: 5px; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 20px; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #666; }
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --header-bg: #161b22;
+        }
+
+        body { 
+            font-family: 'JetBrains Mono', 'Fira Code', monospace; 
+            line-height: 1.6; 
+            color: var(--text-color); 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: var(--bg-color); 
+        }
+
+        header { 
+            background: var(--header-bg); 
+            padding: 3rem 1rem; 
+            text-align: center; 
+            border-radius: 12px;
+            border: 1px solid #30363d;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        h1 { margin: 10px 0; font-weight: 500; color: #fff; }
+        .subtitle { font-size: 1.2rem; color: var(--accent-color); margin-bottom: 20px; }
+
+        .social-links { margin-top: 20px; font-size: 1.5rem; }
+        .social-links a { color: var(--text-color); margin: 0 15px; text-decoration: none; transition: color 0.3s; }
+        .social-links a:hover { color: var(--accent-color); }
+
+        section { 
+            background: var(--header-bg); 
+            margin-top: 30px; 
+            padding: 30px; 
+            border-radius: 12px; 
+            border: 1px solid #30363d;
+        }
+
+        h2 { color: var(--accent-color); border-bottom: 1px solid #30363d; padding-bottom: 10px; font-size: 1.4rem; }
+        
+        p { font-weight: 300; font-size: 0.95rem; text-align: justify; }
+
+        .video-container { 
+            background: #000;
+            aspect-ratio: 16/9;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: 1px dashed #30363d;
+        }
+
+        footer { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #8b949e; }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="foto-perfil.jpg" alt="Fausto Piloni" class="profile-img">
         <h1>Fausto Piloni</h1>
-        <p>Estudiante Avanzado de Ingeniería de Sonido - UNTREF</p>
+        <div class="subtitle">Ingeniería de Sonido y Acústica</div>
+        
+        <div class="social-links">
+            <a href="TU_LINK_DE_LINKEDIN" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="TU_LINK_DE_INSTAGRAM" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:tu-email@correo.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
     </header>
 
-    <section id="presentacion">
-        <h2>Presentación</h2>
-        <p>Especialista en acústica y procesamiento de señales, con experiencia en caracterización de sistemas e I+D.</p>
+    <section id="sobre-mi">
+        <h2>./sobre_mi</h2>
+        <p>
+            Especialista enfocado en el diseño y caracterización de sistemas de sonido, electrónica de audio y procesamiento de señales. 
+            Mi trabajo combina el análisis riguroso de circuitos y el desarrollo de hardware (PCB) con la medición y optimización acústica 
+            mediante herramientas de simulación y precisión.
+        </p>
+        <p>
+            Actualmente me centro en proyectos donde la ingeniería y la implementación práctica convergen, desde el diseño de filtros 
+            de cruce y gabinetes personalizados hasta la validación de sistemas bajo normativas técnicas. Mi enfoque busca la excelencia 
+            sonora a través del diseño basado en datos y la experimentación validada.
+        </p>
+
         <div class="video-container">
-            <p style="text-align:center; padding-top:20%;">[Video de Presentación en Proceso]</p>
+            <p>[Video de Presentación en Proceso]</p>
         </div>
     </section>
 
     <section id="proyectos">
-        <h2>Proyectos Académicos y Experiencia</h2>
-        <p>Próximamente: Documentación de proyectos en VituixCAD, EASE e informes de I+D.</p>
+        <h2>./proyectos_destacados</h2>
+        <p>En desarrollo: Documentación técnica de diseños en VituixCAD, EASE, Altium Designer y proyectos de I+D.</p>
     </section>
 
     <footer>
-        <p>&copy; 2026 Fausto Piloni | Buenos Aires, Argentina</p>
+        <p>compilado con éxito | &copy; 2026 Fausto Piloni</p>
     </footer>
 
 </body>
