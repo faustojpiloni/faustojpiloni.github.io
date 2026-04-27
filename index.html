@@ -141,15 +141,17 @@
             text-align: center; 
             margin-top: 60px; 
             padding: 40px 0; 
-            font-size: 0.3rem; 
-            color: #8b949e;
             clear: both;
-            width: 100%; /* Asegura que ocupe todo el ancho para centrar bien */
+            width: 100%;
         }
 
         footer p {
-            margin: 0 !important; /* El !important asegura que no herede márgenes de otros p */
-            text-align: center !important; /* Fuerza el centrado sobre el justify general */
+            /* Forzamos el tamaño y color aquí para que no dependa de nadie más */
+            font-size: 0.8rem !important; 
+            color: #8b949e !important;
+            margin: 0 !important;
+            text-align: center !important;
+            letter-spacing: 0.5px; /* Un pequeño toque de aire entre letras */
         }
     </style>
 </head>
