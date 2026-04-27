@@ -20,7 +20,19 @@
         .active { display: block; }
         .nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; padding: 10px; cursor: pointer; border: none; }
         .next { right: 0; } .prev { left: 0; }
-        footer { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #8b949e; }
+        footer { 
+            text-align: center; 
+            margin-top: 60px; /* Espacio extra respecto al carrusel */
+            padding: 40px 0; /* Padding para asegurar que el texto no toque el fondo */
+            font-size: 0.8rem; 
+            color: #8b949e;
+            clear: both; /* Evita interferencias con elementos flotantes o posicionados */
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
