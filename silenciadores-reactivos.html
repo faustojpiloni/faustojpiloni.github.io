@@ -31,7 +31,19 @@
         .btn-container { text-align: center; margin-top: 40px; }
         .btn-pdf { display: inline-block; padding: 12px 25px; border: 1px solid var(--accent-color); color: var(--accent-color); text-decoration: none; border-radius: 5px; transition: 0.3s; }
         .btn-pdf:hover { background: rgba(88, 166, 255, 0.1); }
-        footer { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #8b949e; }
+        footer { 
+            text-align: center; 
+            margin-top: 60px; /* Espacio extra respecto al carrusel */
+            padding: 40px 0; /* Padding para asegurar que el texto no toque el fondo */
+            font-size: 0.8rem; 
+            color: #8b949e;
+            clear: both; /* Evita interferencias con elementos flotantes o posicionados */
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
